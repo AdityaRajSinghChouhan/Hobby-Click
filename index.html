@@ -1,59 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/HCstyle.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/HCstyle.css" />
     <title>Hobby Click</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="head">
-        <nav id="navbar">
-            <div id="logo">
-                <img id="logoimg"src="../static/Logo.png" alt="">
-            </div>
-            <div id="minue">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#all">Gallery</a></li>
-                </ul>
-            </div>
-        </nav>
-        
-        <div id="web">       
-            <img id="background_img" src="../static/webimg.jpg" alt="">
-            <p id="webname">Hii, I Am Abhay Singh</p>
+      <nav id="navbar">
+        <div id="logo">
+          <img id="logoimg" src="../static/Logo.png" alt="" />
         </div>
+        <div id="minue">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#all">Gallery</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="web">
+        <img id="background_img" src="../static/webimg.jpg" alt="" />
+        <p id="webname">Hii, I Am Abhay Singh</p>
+      </div>
     </header>
 
     <!-- About -->
-    <hr>
+    <hr />
     <section id="about">
-        <div id="image">
-            <img id="mainimg" src="../static/mainimg.jpg" alt="">
-        </div>
-        <div id="caption">
-            <h1 id="names">Abhay singh chouhan</h1>
-            <p id="captiontext">Hii, My name is Abhay Singh Chouhan and I am a photographer </p>
-        </div>
+      <div id="image">
+        <img id="mainimg" src="../static/mainimg.jpg" alt="" />
+      </div>
+      <div id="caption">
+        <h1 id="names">Abhay singh chouhan</h1>
+        <p id="captiontext">
+          Hii, My name is Abhay Singh Chouhan and I am a photographer
+        </p>
+      </div>
     </section>
     <!-- Gallery  -->
     <div id="all">
-
-        <section id="gallerysec">
-            <h1 id="galleryintro">Hello! Welcome To Hobby Click Gallery</h1>         
-        </section>
-        <section id="galleryimgsec">
-            <div ><img class="gallery_img" src="../static/imgp1.jpg" alt=""></div>
-            <div ><img class="gallery_img" src="../static/imgp2.jpg" alt=""></div>
-            <div ><img class="gallery_img" src="../static/imgp5.jpg" alt=""></div>
-            <div ><img class="gallery_img" src="../static/imgp6.jpg" alt=""></div>
-            <div ><img class="gallery_img" src="../static/imgp7.jpg" alt=""></div>
-            <div ><img class="gallery_img" src="../static/imgp3.jpg" alt=""></div>
-            <div ><img class="gallery_img" src="../static/imgp9.jpg" alt=""></div>
-            
-        </section>
+      <section id="gallerysec">
+        <h1 id="galleryintro">Hello! Welcome To Hobby Click Gallery</h1>
+      </section>
+      <div id="fullimg-box">
+        <img id="fullimg" src="../static/imgp1.jpg" />
+        <span onclick="closeFullImg()">X</span>
+      </div>
+      <section id="galleryimgsec">
+        <div>
+          <img
+            class="gallery_img"
+            src="../static/imgp1.jpg"
+            alt=""
+            onclick="openFullImg(this.src)"
+          />
+        </div>
+        <div>
+          <img
+            class="gallery_img"
+            src="../static/imgp5.jpg"
+            alt=""
+            onclick="openFullImg(this.src)"
+          />
+        </div>
+        <div>
+          <img
+            class="gallery_img"
+            src="../static/imgp2.jpg"
+            alt=""
+            onclick="openFullImg(this.src)"
+          />
+        </div>
+        <div>
+            class="gallery_img"
+            src="../static/imgp6.jpg"
+            alt=""
+            onclick="openFullImg(this.src)"
+          />
+        </div>
+        <div>
+          <img
+            class="gallery_img"
+            src="../static/imgp7.jpg"
+            alt=""
+            onclick="openFullImg(this.src)"
+          />
+        </div>
+        <div>
+          <img
+            class="gallery_img"
+            src="../static/imgp3.jpg"
+            alt=""
+            onclick="openFullImg(this.src)"
+          />
+        </div>
+        <div>
+          <img
+            class="gallery_img"
+            src="../static/imgp9.jpg"
+            alt=""
+            onclick="openFullImg(this.src)"
+          />
+        </div>
+      </section>
     </div>
-</body>
+    <script src="./static/HCscript.js"></script>
+  </body>
 </html>
